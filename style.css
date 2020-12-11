@@ -29,6 +29,10 @@ body {
     padding-right: 0.5em !important;
 }
 
+.menu-social:hover {
+    color: #3281C7 !important;
+}
+
 #my-nav {
     opacity: 0.85;
     font-size: 0.9em;
@@ -43,13 +47,18 @@ body {
 #line-text {
     font-weight: 400 !important;
     font-size: 0.7em !important;
-    margin-top: 0.5px;
+    margin-top: 2px;
 }
 
 #menu-btn {
     font-size: 1.5em !important;
     border: 0 !important;
     padding: 0;
+}
+
+#menu-btn:focus {
+    border: 0 !important;
+    outline: none !important;
 }
 
 
