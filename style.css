@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F4F4;
+}
+
+.prim-color {
+    background-color: #F4F4F4;
+}
+
+.accent-color {
+    background-color: #3281C7;
+}
+
+.prim-font-color {
+    color: #1A1919;
+}
+
+.sec-font-color {
+    color: #D1D1D1;
+}
+
+.accent-font-color {
+    color: #3281C7;
+}
+
+.menu-social {
+    font-size: 1.2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+#my-nav {
+    opacity: 0.85;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#name-text {
+    font-weight: 700 !important;
+    font-size: 0.9em !important;
+}
+
+#line-text {
+    font-weight: 400 !important;
+    font-size: 0.7em !important;
+    margin-top: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
