@@ -4,7 +4,7 @@ const routes = {
     '/contact' : contact,
   };
   
-  const rootDiv = document.getElementById('root');
+  const rootDiv = document.getElementById('main');
   rootDiv.innerHTML = routes[window.location.pathname];
   
   const onNavigate = (pathname) => {

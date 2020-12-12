@@ -113,7 +113,7 @@ b {
     min-height: 100vh;
 }
 
-#root {
+#main {
     padding-top: 8rem;
     padding-bottom: 8rem;
     margin-left: 2rem;
@@ -184,7 +184,7 @@ b {
         font-size: 1.5rem;
     }
 
-    #root {
+    #main {
         padding-bottom: 5rem;
     }
 }
