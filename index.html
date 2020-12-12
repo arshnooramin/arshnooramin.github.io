@@ -17,44 +17,62 @@
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav id="my-nav" class="navbar prim-color prim-font-color navbar-expand-lg">
-            <div class="navbar-brand my-2 ml-lg-4 ml-sm-2 ml-md-2"> 
-                <div class="row m-0">
-                    <h6 id="name-text" class="nav-text mb-0">Arsh Noor Amin.</h6>
-                </div>                 
-                <div class="row m-0">
-                    <h6 id="line-text" class="nav-text mb-0">Computer Engineering Student</h6>
-                </div>                 
-            </div>
-            <button id="menu-btn" class="navbar-toggler mr-sm-2 mr-md-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars prim-font-color"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="mr-auto"></div>
-                <ul class="navbar-nav form-inline my-2 my-lg-0 mr-4">
-                    <li class="nav-item prim-font-color">
-                        <a class="nav-link p-3 prim-font-color" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-3 prim-font-color" href="#">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-3 prim-font-color" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link p-3 prim-font-color" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item p-3 form-inline">
-                        <a class="nav-link menu-social prim-font-color" href="https://www.facebook.com/arshnoor.lakhani/"> <i class="fab fa-facebook"></i> </a>
-                        <a class="nav-link menu-social prim-font-color" href="https://www.instagram.com/arshnoorlakhani/"> <i class="fab fa-instagram"></i> </a>
-                        <a class="nav-link menu-social prim-font-color" href="https://www.linkedin.com/in/arshnooramin/"> <i class="fab fa-linkedin"></i> </a>
-                        <a class="nav-link menu-social prim-font-color" href="https://github.com/arshnooramin/"> <i class="fab fa-github"></i> </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container">
+        <div id="page-container">
+            <nav id="my-nav" class="navbar fixed-top prim-color black-font-color navbar-expand-lg">
+                <div class="navbar-brand my-2 ml-lg-4 ml-sm-2 ml-md-2"> 
+                    <div class="row m-0">
+                        <h6 id="name-text" class="nav-text mb-0">Arsh Noor Amin.</h6>
+                    </div>                     
+                    <div class="row m-0">
+                        <h6 id="line-text" class="nav-text mb-0">Computer Engineering Student</h6>
+                    </div>                     
+                </div>
+                <button id="menu-btn" class="navbar-toggler mr-sm-2 mr-md-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars prim-font-color"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav form-inline my-2 my-lg-0 mr-4">
+                        <li class="nav-item prim-font-color">
+                            <a class="nav-link p-3 black-font-color" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-3 black-font-color" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-3 black-font-color" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-3 black-font-color" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item p-3 form-inline">
+                            <a class="nav-link menu-social black-font-color" href="https://www.facebook.com/arshnoor.lakhani/"> <i class="fab fa-facebook"></i> </a>
+                            <a class="nav-link menu-social black-font-color" href="https://www.instagram.com/arshnoorlakhani/"> <i class="fab fa-instagram"></i> </a>
+                            <a class="nav-link menu-social black-font-color" href="https://www.linkedin.com/in/arshnooramin/"> <i class="fab fa-linkedin"></i> </a>
+                            <a class="nav-link menu-social black-font-color" href="https://github.com/arshnooramin/"> <i class="fab fa-github"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="main-container">
+                <div class="row mx-xl-5">
+                    <div id="img-col" class="col mr-xl-5 mr-lg-5 mr-md-3 m-auto">
+                        <div id="pic-bg" class="accent-color">
 </div>
+                        <div id="img-div" class="">
+                            <img id="my-pic" src="assets/img/arshnoor.jpg"/>
+                        </div>
+                    </div>
+                    <div id="about" class="col m-auto">
+                        <p class="black-font-color"><b>Computer Engineering</b> Student @<a class="link prim-font-color" href="https://www.bucknell.edu/">BucknellU</a> <em>with a</em> Passion for <b>UIUX Design</b>, <b>Web Development</b>, 
+                        and <b>Graphic Design</b>.</p> 
+                    </div>
+                </div>
+            </div>
+            <nav id="footer" class="navbar p-2 fixed-bottom">
+                <p class="w-100 m-0">© 2021 by Arsh Noor Amin</p>
+            </nav>
+        </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
