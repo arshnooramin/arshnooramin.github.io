@@ -1,21 +1,27 @@
-  
+// close nav bar on click
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});
+
+// routing mechanism
 const routes = {
     '' : aboutHTML,
     '#contact' : contactHTML
   };
   
   const rootDiv = document.getElementById('main');
-  rootDiv.innerHTML = routes[window.location.hash];
   
-  const onNavigate = (pathname) => {
+  rootDiv.innerHTML = routes[window.location.hash];
+  console.log(window.location.hash)
+  const onNavigate = (hash) => {
     window.history.pushState(
       {},
-      pathname,
-      window.location.origin + pathname
+      hash,
+      window.location.origin + hash
     )
-    rootDiv.innerHTML = routes[pathname]
+    rootDiv.innerHTML = routes[hash]
   }
   
   window.onpopstate = () => {
-    rootDiv.innerHTML = routes[window.location.pathname]
+    rootDiv.innerHTML = routes[window.location.hash]
   }

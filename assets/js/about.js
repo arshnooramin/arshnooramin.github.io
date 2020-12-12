@@ -7,7 +7,7 @@ let aboutHTML = `
     </div>
 </div>
 <div id="about" class="col m-auto">
-    <p class="black-font-color"><b>Computer Engineering</b> Student @<a class="link prim-font-color" href="https://www.bucknell.edu/">BucknellU</a> <em>with a</em> Passion for <b>UIUX Design</b>, <b>Web Development</b>, 
+    <p class="black-font-color"><b>Computer Engineering</b> Student @<a class="link prim-font-color" href="https://www.bucknell.edu/" target="_blank">BucknellU</a> <em>with a</em> Passion for <b>UIUX Design</b>, <b>Web Development</b>, 
     and <b>Graphic Design</b>.</p> 
 </div>
 </div>
