@@ -1,7 +1,7 @@
   
 const routes = {
     '/' : about,
-    '/contact' : contact,
+    '/#contact' : contact,
   };
   
   const rootDiv = document.getElementById('main');
