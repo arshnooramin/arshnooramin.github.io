@@ -1,11 +1,11 @@
   
 const routes = {
-    '/' : about,
-    '/#contact' : contact,
+    '' : aboutHTML,
+    '#contact' : contactHTML
   };
   
   const rootDiv = document.getElementById('main');
-  rootDiv.innerHTML = routes[window.location.pathname];
+  rootDiv.innerHTML = routes[window.location.hash];
   
   const onNavigate = (pathname) => {
     window.history.pushState(

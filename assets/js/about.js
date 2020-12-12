@@ -1,4 +1,4 @@
-let about = `
+let aboutHTML = `
 <div class="row mx-xl-5">
 <div id="img-col" class="col mr-xl-5 mr-lg-5 m-auto">
     <div id="pic-bg" class="accent-color"></div>
