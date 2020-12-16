@@ -5,7 +5,7 @@ $('.navbar-collapse a').click(function(){
 
 // routing mechanism
 const routes = {
-    '' : aboutHTML,
+    '' : homeHTML,
     '#contact' : contactHTML
   };
   

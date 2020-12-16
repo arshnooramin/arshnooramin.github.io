@@ -9,9 +9,13 @@ b {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 a:hover {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .link {
@@ -39,7 +43,7 @@ a:hover {
 }
 
 .black-font-color {
-    color: black;
+    color: #262626;
 }
 
 .menu-social {
@@ -84,7 +88,7 @@ a:hover {
     outline: none !important;
 }
 
-#about {
+#home {
     font-size: 2.5rem;
     letter-spacing: -1.2px;
     line-height: 1.25;
@@ -101,6 +105,8 @@ a:hover {
     text-decoration: underline;
 }
 
+/* My Picture Classes */
+
 #my-pic {
     width: auto;
     height: 100%;
@@ -114,7 +120,7 @@ a:hover {
     width: 320px;
     height: 320px;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 50px;
 }
 
@@ -123,6 +129,8 @@ a:hover {
     height: 320px;
     margin-bottom: 40px;
 }
+
+/* Main Page Structure Class */
 
 #page-container {
     position: relative;
@@ -147,6 +155,38 @@ a:hover {
     font-weight: 500;
 }
 
+/* > xx-large */
+@media (min-width: 1500px) {
+    #img-col {
+        max-width: 400px !important;
+    }
+
+    #img-div {
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    #pic-bg {
+        width: 350px;
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    #home {
+        font-size: 2.8rem;
+    }
+
+    #main {
+        padding-top: 10rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
+
+/* < large */
 @media (max-width: 992px) {
     #img-col {
         max-width: 330px !important;
@@ -156,7 +196,7 @@ a:hover {
         width: 280px;
         height: 280px;
         position: absolute;
-        top: 40px;
+        top: 50px;
         left: 50px;
     }
 
@@ -166,11 +206,18 @@ a:hover {
         margin-bottom: 40px;
     }
 
-    #about {
-        font-size: 2.15rem;
+    #home {
+        font-size: 2rem;
+    }
+
+    #main {
+        padding-top: 12rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
 
+/* < medium */
 @media (max-width: 768px) {
     #img-col {
         max-width: 250px !important;
@@ -180,7 +227,7 @@ a:hover {
         width: 200px;
         height: 200px;
         position: absolute;
-        top: 40px;
+        top: 50px;
         left: 50px;
     }
 
@@ -190,7 +237,7 @@ a:hover {
         margin-bottom: 40px;
     }
 
-    #about {
+    #home {
         min-width: 100%;
         padding-top: 3rem;
         padding-left: 1.5rem;
@@ -211,9 +258,13 @@ a:hover {
     }
 
     #main {
+        padding-top: 6rem;
         padding-bottom: 5rem;
     }
 }
+
+
+
 
 
 
