@@ -6,7 +6,6 @@ $('.navbar-collapse a').click(function(){
 // routing mechanism
 const routes = {
     '' : homeHTML,
-    '#contact' : contactHTML
   };
   
   const rootDiv = document.getElementById('main');
