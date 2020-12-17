@@ -183,7 +183,7 @@ a:hover {
 }
 
 .work-desc {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #636363 !important;
 }
@@ -277,21 +277,21 @@ a:hover {
 /* < medium */
 @media (max-width: 768px) {
     #img-col {
-        max-width: 250px !important;
+        max-width: 225px !important;
     }
 
     #img-div {
         width: 200px;
         height: 200px;
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: 25px;
+        left: 25px;
     }
 
     #pic-bg {
         width: 200px;
         height: 200px;
-        margin-bottom: 40px;
+        margin-bottom: 5px;
     }
 
     #home-text {
@@ -314,9 +314,14 @@ a:hover {
         text-decoration: underline;
     } */
 
+    #home {
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+    }
+
     #work {
-        padding-top: 5rem;
-        padding-bottom: 4rem;
+        padding-top: 5.5rem;
+        padding-bottom: 5rem;
     }
 
     .work-card {
