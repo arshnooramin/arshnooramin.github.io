@@ -1,3 +1,5 @@
+/* Global CSS */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F4F4F4;
@@ -42,8 +44,41 @@ a:hover {
     color: #3281C7;
 }
 
-.black-font-color {
-    color: #262626;
+/* Main Page Structure CSS */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#home {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: #7A7A7A;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Nav Bar CSS */
+
+.nav-link:hover {
+    color: #3281C7 !important;
+}
+
+#my-nav {
+    background-color: rgba(244,244,244,0.9);
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 .menu-social {
@@ -54,16 +89,6 @@ a:hover {
 
 .menu-social:hover {
     color: #3281C7 !important;
-}
-
-.nav-link:hover {
-    color: #3281C7 !important;
-}
-
-#my-nav {
-    background-color: rgba(244,244,244,0.9);
-    font-size: 0.9em;
-    font-weight: 500;
 }
 
 #name-text {
@@ -88,24 +113,13 @@ a:hover {
     outline: none !important;
 }
 
-#home {
+/* Home Page CSS */
+
+#home-text {
     font-size: 2.5rem;
     letter-spacing: -1.2px;
     line-height: 1.25;
 }
-
-#contact {
-    font-size: 2.25rem;
-    letter-spacing: -1.2px;
-    line-height: 1.25;
-}
-
-#email {
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-/* My Picture Classes */
 
 #my-pic {
     width: auto;
@@ -130,30 +144,73 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/* Main Page Structure Class */
+/* Work Page CSS */
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
+#work {
+    padding-top: 7rem;
+    padding-bottom: 8rem; 
 }
 
-#main {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+.header {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+  	justify-content: space-between;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    color: #7A7A7A;
-    font-size: 0.85rem;
+.header-text {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.header-sub {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: auto;
+    padding-bottom: 5px;
+    letter-spacing: -0.2px;
+}
+
+.work-type {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.work-title {
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    font-size: 1.5rem;
+}
+
+.work-desc {
+    font-size: 0.75rem;
     font-weight: 500;
+    color: #636363 !important;
 }
+
+.work-card {
+    border: 0;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.work-card:hover {
+    transform: scale(1.025);
+}
+
+/* Contact Page CSS */
+
+/* #contact {
+    font-size: 2.25rem;
+    letter-spacing: -1.2px;
+    line-height: 1.25;
+}
+
+#email {
+    font-size: 2rem;
+    text-decoration: underline;
+} */
 
 /* > xx-large */
 @media (min-width: 1500px) {
@@ -175,11 +232,11 @@ a:hover {
         margin-bottom: 50px;
     }
 
-    #home {
+    #home-text {
         font-size: 2.8rem;
     }
 
-    #main {
+    #home {
         padding-top: 10rem;
         padding-right: 4rem;
         padding-left: 4rem;
@@ -206,11 +263,11 @@ a:hover {
         margin-bottom: 40px;
     }
 
-    #home {
+    #home-text {
         font-size: 2rem;
     }
 
-    #main {
+    #home {
         padding-top: 12rem;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -237,7 +294,7 @@ a:hover {
         margin-bottom: 40px;
     }
 
-    #home {
+    #home-text {
         min-width: 100%;
         padding-top: 3rem;
         padding-left: 1.5rem;
@@ -246,7 +303,7 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    #contact {
+    /* #contact {
         text-align: center;
         font-size: 1.7rem;
         letter-spacing: -1.2px;
@@ -255,11 +312,23 @@ a:hover {
     #email {
         font-size: 1.2rem;
         text-decoration: underline;
+    } */
+
+    #work {
+        padding-top: 5rem;
+        padding-bottom: 4rem;
     }
 
-    #main {
-        padding-top: 6rem;
-        padding-bottom: 5rem;
+    .work-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .header-text {
+        font-size: 1.8rem;
+    }
+
+    .header-sub {
+        font-size: 1rem;
     }
 }
 
