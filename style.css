@@ -7,6 +7,10 @@ b {
     font-weight: 600;
 }
 
+button:focus {
+    outline: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -289,11 +293,23 @@ html {
 }
 
 @media (max-width: 992px) {
+    #about {
+        max-width: 90%;
+    }
+
+    .ui-img {
+        width: 270px;
+    }
+
+    .work-sub {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 767px) {
     #about {
-        margin-top: 50vh;
+        margin-top: 40vh;
         max-width: 100%;
     }
 
@@ -319,7 +335,7 @@ html {
     }
 
     .skill-sub {
-        margin-top: 1.5rem;
+        margin-top: 1.75rem;
     }
 
     .work-sub {
@@ -334,6 +350,17 @@ html {
 
     #spacing {
         margin-top: 48rem;
+    }
+
+    .skill-row {
+        margin-top: 1rem !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
