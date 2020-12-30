@@ -7,6 +7,14 @@ b {
     font-weight: 600;
 }
 
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
 button:focus {
     outline: none;
 }
@@ -29,6 +37,11 @@ html {
 
 .sec-font-color {
     color: #D1D1D1;
+}
+
+#top {
+    position: absolute;
+    top: 0;
 }
 
 #my-nav {
