@@ -111,7 +111,7 @@ html {
 
 .sec-desc {
     font-size: 14px;
-    width: 40%;
+    max-width: 40%;
 }
 
 .border-btn {
@@ -291,10 +291,49 @@ html {
 @media (max-width: 992px) {
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #about {
         margin-top: 50vh;
         max-width: 100%;
+    }
+
+    .sec-desc {
+        max-width: 100%;
+    }
+
+    .org-name,
+    .time-text,
+    .title-name,
+    .loc-text {
+        float: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .time-text {
+        margin-bottom: 1.25rem;
+        font-size: 16px;
+    }
+
+    .loc-text {
+        margin-bottom: 2rem;
+    }
+
+    .skill-sub {
+        margin-top: 1.5rem;
+    }
+
+    .work-sub {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .role-desc,
+    .ui-img {
+        display: none;
+    }
+
+    #spacing {
+        margin-top: 48rem;
     }
 }
 
