@@ -113,7 +113,7 @@ html {
 
 .divider {
     border-bottom: 3px solid #1492E6;
-    width: 50px;
+    width: 35px;
 }
 
 .sec-div {
@@ -303,6 +303,16 @@ html {
     font-size: 12px;
     font-weight: 400;
     color: #D8D8D8;
+}
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 992px) {
