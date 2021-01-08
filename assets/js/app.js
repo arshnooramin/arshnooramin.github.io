@@ -3,7 +3,7 @@ $('.navbar-collapse a').click(function(){
 });
 
 // detect scroll top or down
-if ($('.smart-scroll').length > 0) { // check if element exists
+if (($('.smart-scroll').length > 0) && !($(window).scrollTop() === 0)) { // check if element exists
     var last_scroll_top = 0;
     $(window).on('scroll', function() {
         scroll_top = $(this).scrollTop();
