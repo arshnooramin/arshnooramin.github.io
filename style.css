@@ -175,20 +175,15 @@ html {
 }
 
 .side-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
     font-weight: 800;
     letter-spacing: 5px;
     font-size: 25px;
     color: #D8D8D8;
-    position: absolute;
-    background-color: #F4F4F4;
-    padding-top: 1rem;
 }
 
 .side-divider {
     border: 1px solid #D8D8D8;
-    height: 100%;
+    width: 80%;
 }
 
 .org-name {
@@ -331,17 +326,20 @@ html {
     border-radius: 0;
     border: 0;
     padding: 0;
-    margin-bottom: 1rem;
     font-size: 15px;
     font-weight: 600;
     color: #D8D8D8;
-    transition: color 0.3s ease-in-out, border-right 0.3s ease;
+    border-left: #D8D8D8 3px solid;
+    padding-left: 1rem;
+    padding: 0.425rem 1rem;
+    transition: color 0.3s ease-in-out, border-left 0.3s ease;
 }
 
 .side-panel.active {
     color: #1492E6 !important;
     background-color: none;
     text-decoration: none;
+    border-left: #1492E6 3px solid;
 }
 
 .side-panel:hover {
@@ -351,14 +349,30 @@ html {
 }
 
 @media (max-width: 992px) {
+    .side-panel {
+        color: #D8D8D8;
+        border-bottom: #D8D8D8 3px solid;
+        padding-bottom: 0.25rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        border-left: 0;
+        margin-bottom: 1.25rem;
+        text-align: center;
+        transition: color 0.3s ease-in-out, border-left 0.3s ease;
+    }
+
+    .side-panel.active {
+        color: #1492E6 !important;
+        background-color: none;
+        text-decoration: none;
+        border-bottom: #1492E6 3px solid;
+        border-left: 0;
+    }
+
     .list-group {
         flex-direction: row;
     }
 
-    #list-hs-list, #list-diginera-list, #list-research-list, #list-lcm-list {
-        margin-left: 1rem !important;
-    }
-    
     .side-panel.active {
     }
 
