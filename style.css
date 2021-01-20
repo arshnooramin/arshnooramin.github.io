@@ -95,19 +95,31 @@ html {
 
 #about {
     margin-top: 50vh;
-    max-width: 65%;
+    max-width: 75%;
 }
 
 #desc-text {
     font-size: 25px;
     letter-spacing: -0.5px;
-    line-height: 35px;
-    font-weight: 500;
+    line-height: 40px;
+    font-weight: 600;
     color: #262626;
 }
 
-#hello {
-    font-size: 35px;
+#hi-text {
+    color: #262626;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#arsh-text {
+    color: #1492E6 !important;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+#tag-line {
+    font-size: 45px;
     font-weight: 800;
 }
 
@@ -167,7 +179,7 @@ html {
     transform: rotate(180deg);
     font-weight: 800;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 25px;
     color: #D8D8D8;
     position: absolute;
     background-color: #F4F4F4;
@@ -225,7 +237,7 @@ html {
     top: -20px;
     font-weight: 800;
     letter-spacing: 5px;
-    font-size: 30px;
+    font-size: 25px;
     color: #D8D8D8;
     padding-left: 30px;
 }
@@ -315,7 +327,41 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
+.side-panel {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+    color: #D8D8D8;
+    transition: color 0.3s ease-in-out, border-right 0.3s ease;
+}
+
+.side-panel.active {
+    color: #1492E6 !important;
+    background-color: none;
+    text-decoration: none;
+}
+
+.side-panel:hover {
+    color: #BBBBBB;
+    background-color: none;
+    text-decoration: none;
+}
+
 @media (max-width: 992px) {
+    .list-group {
+        flex-direction: row;
+    }
+
+    #list-hs-list, #list-diginera-list, #list-research-list, #list-lcm-list {
+        margin-left: 1rem !important;
+    }
+    
+    .side-panel.active {
+    }
+
     #about {
         max-width: 90%;
     }
