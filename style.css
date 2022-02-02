@@ -421,9 +421,9 @@ html {
     }
 
     .org-name,
-    .time-text,
-    .title-name,
-    .loc-text {
+        .time-text,
+        .title-name,
+        .loc-text {
         float: none;
         margin-bottom: 0.5rem;
     }
@@ -447,7 +447,7 @@ html {
     }
 
     .role-desc,
-    .ui-img {
+        .ui-img {
         display: none;
     }
 
@@ -465,6 +465,13 @@ html {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+
+#beherd {
+}
+
+#beherd {
+    background-color: #9100c6;
 }
 
 
