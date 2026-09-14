@@ -1,0 +1,48 @@
+# Site settings
+title: Arsh Noor Amin
+email: your-email@example.com
+description: >-
+  Software Engineer with a passion for and experience in UI/UX Design, 
+  Web Development, and Full Stack Engineering.
+baseurl: ""
+url: "https://arshnooramin.github.io"
+author: Arsh Noor Amin
+
+# Social links
+social:
+  linkedin: https://www.linkedin.com/in/arshnooramin/
+  github: https://github.com/arshnooramin/
+  twitter: 
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .github/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - README.md
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /portfolio/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
