@@ -1,0 +1,10 @@
+<header class="site-header wrapper">
+  <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+  <nav class="nav" aria-label="Main">
+    <a href="{{ '/#experience' | relative_url }}">experience</a>
+    <a href="{{ '/#projects' | relative_url }}">projects</a>
+    <a href="{{ site.resume | relative_url }}" download="Arsh Noor Amin - Resume.pdf">resume ↓</a>
+    {% include social.html %}
+  </nav>
+</header>

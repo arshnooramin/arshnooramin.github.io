@@ -1,22 +1,22 @@
 # Site settings
 title: Arsh Noor Amin
-email: your-email@example.com
-description: >-
-  Software Engineer with a passion for and experience in UI/UX Design, 
-  Web Development, and Full Stack Engineering.
+email: arshnoor.lakhani@gmail.com
+description: Software Engineer   # used for search engines and link previews
+# Bio shown under your name on the home page. Inline Markdown works, e.g. [links](https://...).
+bio: "Software Engineer at [Bloomberg](https://www.bloomberg.com/company), focused on event-driven, data heavy systems. I work across the stack but spend most of my time on the backend."
 baseurl: ""
 url: "https://arshnooramin.github.io"
 author: Arsh Noor Amin
+resume: /assets/files/resume.pdf
 
 # Social links
 social:
-  linkedin: https://www.linkedin.com/in/arshnooramin/
-  github: https://github.com/arshnooramin/
+  linkedin: https://www.linkedin.com/in/arshnooramin
+  github: https://github.com/arshnooramin
   twitter: 
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -30,18 +30,13 @@ exclude:
   - README.md
 
 # Collections
+# Projects are listed on the home page only. Set output: true (plus a layout) to give each one its own page.
 collections:
   projects:
-    output: true
-    permalink: /portfolio/:name/
+    output: false
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
   - scope:
       path: ""
     values:
