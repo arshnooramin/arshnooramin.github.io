@@ -1,0 +1,39 @@
+# Work experience, newest first. Shown in the "experience" section on the home page.
+# Keep summaries to a line or two; the resume PDF has the full details.
+# Each company can hold several roles (e.g. team moves within the same company).
+# Optional `url` on a company links its name.
+# Optional `logo` replaces the name with an image. It's filled with a single color (white by default).
+# Optional `logo_color` changes that color: a palette name like var(--yellow) or any CSS color, e.g. "#ff7b72".
+# Optional `logo_height` sizes the logo (any CSS length, e.g. 1.75rem or 28px; default 1.5rem).
+# `summary` is Markdown, so links work: [text](https://...). Quote it if it starts with [.
+
+- company: Bloomberg LP
+  logo: /assets/img/logos/bloomberg.svg
+  logo_height: 1.25rem
+  url: https://www.bloomberg.com/company/
+  location: New York, NY
+  roles:
+    - title: Software Engineer
+      dates: Aug 2023 – Present
+      summary: Currently building Index calculation workflows for [Fixed Income Indices](https://www.bloomberg.com/markets/rates-bonds/bloomberg-fixed-income-indices). Previously Led [Data License's](https://professional.bloomberg.com/products/data/data-license/) 2.5 PB cloud migration.
+      stack: [Python, Kafka, React, Postgres, Redis]
+
+- company: Institute on Taxation and Economic Policy (ITEP)
+  logo: /assets/img/logos/itep.svg
+  url: https://itep.org/
+  location: Washington, D.C.
+  roles:
+    - title: Model Development Intern
+      dates: Jun 2022 – Aug 2022
+      summary: Enhanced the [Tax Microsimulation System](https://itep.org/itep-tax-model/).
+      stack: [JavaScript, Redis, Postgres]
+
+- company: Northrop Grumman
+  logo: /assets/img/logos/northrop-grumman.svg
+  url: https://www.northropgrumman.com/
+  location: Baltimore, MD
+  roles:
+    - title: Software Engineering Co-op
+      dates: Aug 2020 – May 2021
+      summary: Developed a flight testing system.
+      stack: [Python]

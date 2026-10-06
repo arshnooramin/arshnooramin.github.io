@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Theme
+   ========================================================================== */
+
+:root {
+  --bg: #0a0a0a;
+  --line: #262626;
+  --fg: #d4d4d4;
+  --bright: #fafafa;
+  --dim: #858585;
+
+  /* accent + a small terminal palette used sparingly */
+  --accent: #79c0ff;
+  --green: #7ee787;
+  --yellow: #e3b341;
+  --magenta: #d2a8ff;
+  --cyan: #56d4dd;
+
+  --font: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.7 var(--font);
+  overflow-wrap: break-word;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover,
+a:focus-visible { text-decoration: underline; }
+a:focus-visible { outline: 1px dashed var(--accent); outline-offset: 2px; }
+
+.wrapper {
+  max-width: 92ch;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+/* Header & footer ------------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.site-title { color: var(--bright); font-weight: 700; }
+.site-title:hover { color: var(--accent); text-decoration: none; }
+
+.nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 1.25rem; }
+.nav a { white-space: nowrap; }
+.nav a { color: var(--dim); }
+.nav a:hover,
+.nav a[aria-current="page"] { color: var(--accent); text-decoration: none; }
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--dim);
+  font-size: 0.85rem;
+}
+
+.site-footer a { color: inherit; }
+.site-footer a:hover { color: var(--accent); }
+
+/* Typography ------------------------------------------------------------ */
+
+h1, h2, h3, h4 {
+  margin: 2rem 0 0.75rem;
+  color: var(--bright);
+  line-height: 1.3;
+}
+
+h1 { margin-top: 0; font-size: 1.6rem; }
+h2 { margin-top: 3rem; font-size: 1.1rem; }
+h3, h4 { font-size: 1rem; }
+
+h2::before { content: "# "; color: var(--magenta); }
+
+p, ul, ol, dl, pre, blockquote { margin: 0 0 1rem; }
+
+ul { padding-left: 2ch; list-style: none; }
+ul > li::before { content: "- "; margin-left: -2ch; color: var(--dim); }
+ol { padding-left: 3ch; }
+
+strong { color: var(--bright); }
+
+code, pre { font-family: var(--font); font-size: 0.9em; }
+code { color: var(--yellow); }
+pre {
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+pre code { color: var(--fg); }
+
+blockquote {
+  padding-left: 1.5ch;
+  border-left: 2px solid var(--line);
+  color: var(--dim);
+}
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+
+img { max-width: 100%; height: auto; border-radius: 6px; }
+
+.dim,
+.meta { color: var(--dim); }
+h3 + .meta { margin-top: -0.5rem; }
+
+/* tech tags cycle through the palette */
+.tag { color: var(--green); white-space: nowrap; }
+.tag:nth-of-type(4n+2) { color: var(--yellow); }
+.tag:nth-of-type(4n+3) { color: var(--cyan); }
+.tag:nth-of-type(4n+4) { color: var(--magenta); }
+.meta > * + *::before { content: "·"; margin: 0 0.75ch; color: var(--dim); }
+
+/* Home ------------------------------------------------------------------ */
+
+.intro h1 { margin: 0.25rem 0 0.75rem; font-size: 2rem; }
+
+.prompt { margin: 0; color: var(--dim); }
+.prompt-sign { color: var(--green); }
+
+.cursor {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-left: 0.4em;
+  vertical-align: text-bottom;
+  background: var(--accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { animation: none; }
+}
+
+.projects { padding: 0; }
+.projects li::before { content: none; }
+.projects li { margin-bottom: 1.5rem; }
+.projects .row { align-items: center; }
+.projects strong,
+.projects strong a { color: var(--bright); }
+.projects strong a:hover { color: var(--accent); }
+.projects p { margin: 0.15rem 0 0; }
+.projects .meta { font-size: 0.9rem; }
+
+/* optional screenshot (image in a project's front matter) */
+.projects li.has-image {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+.shot {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.shot img { width: 100%; height: 100%; object-fit: contain; border-radius: 0; transition: transform 0.2s; }
+.shot:hover img { transform: scale(1.03); }
+
+.links { display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; }
+.links a { display: inline-flex; color: var(--dim); }
+.links a:hover { color: var(--accent); text-decoration: none; }
+.icon { width: 1.1em; height: 1.1em; }
+
+.social { display: inline-flex; align-items: center; gap: 0.9rem; }
+.social a { display: inline-flex; color: var(--dim); }
+.social a:hover { color: var(--accent); text-decoration: none; }
+
+.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+}
+.button:hover,
+.button:focus-visible { background: var(--accent); color: var(--bg); text-decoration: none; }
+
+/* experience: company / role rows with right-aligned location and dates */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 2ch;
+}
+.job { margin-bottom: 2rem; }
+.job strong,
+.job strong a { color: var(--cyan); }
+.row:has(.logo) { align-items: center; }
+
+/* Logos are filled with one color via a mask, so any logo file works on the dark
+   background. The hidden <img> sets the size and carries the alt text.
+   Per-company overrides: logo_height and logo_color in _data/experience.yml. */
+.logo {
+  display: block;
+  background: var(--logo-color, #fff);
+  opacity: 0.85;
+  -webkit-mask: var(--logo) center / contain no-repeat;
+  mask: var(--logo) center / contain no-repeat;
+}
+.logo img {
+  display: block;
+  height: var(--logo-height, 1.5rem);
+  width: auto;
+  border-radius: 0;
+  opacity: 0;
+}
+.company a:hover .logo { opacity: 1; }
+.role { margin-top: 0.5rem; }
+.role + .role { margin-top: 1.25rem; }
+.team { white-space: nowrap; }
+.role .summary { margin: 0.3rem 0 0.2rem; }
+.role .summary p { margin: 0; }
+.role .meta { margin: 0; font-size: 0.9rem; }
+
+/* Small screens --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  body { font-size: 14px; line-height: 1.65; }
+  .wrapper { padding-inline: 1.25rem; }
+
+  .site-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; padding-top: 1.5rem; padding-bottom: 2.5rem; }
+  .nav { gap: 0.25rem 1rem; font-size: 0.9rem; }
+
+  .intro h1 { font-size: 1.6rem; }
+  h2 { margin-top: 2.5rem; }
+
+  /* stack company/location and role/dates instead of squeezing them side by side */
+  .row,
+  .row:has(.logo) { flex-direction: column; align-items: flex-start; }
+  .projects .row { flex-direction: row; align-items: center; }
+  .projects li.has-image { grid-template-columns: 1fr; gap: 0.75rem; }
+  .team { display: block; }
+  .team .sep { display: none; }
+  .job { margin-bottom: 1.75rem; }
+
+  .site-footer { flex-direction: column; margin-top: 3rem; }
+}

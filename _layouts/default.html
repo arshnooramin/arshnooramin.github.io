@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    {% seo %}
+    {% feed_meta %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='5' y='22' font-family='monospace' font-size='18' font-weight='700' fill='%2379c0ff'>%3E_</text></svg>">
+  </head>
+  <body>
+    {% include header.html %}
+
+    <main class="wrapper" aria-label="Content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>
